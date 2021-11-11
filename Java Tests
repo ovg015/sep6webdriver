@@ -1,0 +1,118 @@
+package Test;
+
+public class Test {
+    public static void main(String[] args) {
+        String a = "Wow";
+        String b = a;
+        String c = b + "!";
+        String d = c;
+
+        boolean b1 = a == b;
+        boolean b2 = d.equals(b + "!");
+        boolean b3 = !c.equals(a);
+
+        if (b1 && b2 && b3) {
+            System.out.println("Achievement!");
+        }
+    }
+}
+
+class Student {
+    private String firstName;
+    private String lastName;
+    public Student(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public void printFullName() {
+        System.out.println (this.firstName+" "+this.lastName);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Student[] students = new Student[] {
+                new Student("Angelina", "Jolie"),
+                new Student("Brad", "Pitt"),
+                new Student("Keanu", "Reeves"),
+        };
+        for (Student s : students) {
+            s.printFullName();
+        }
+    }
+}
+
+ class Example {
+    public static void main(String[] args) {
+        byte zero = 0;
+        short a = 3;
+        int b = 1;
+        char d = ' ';
+        float e = 2.0f;
+        boolean f = true;
+        String output = "H" + a + b + b + zero + d + "w" + zero + "r" + b + "d" + d + e + d + f;
+        System.out.println(output);
+    }
+}
+
+ class Car
+ {
+     private String make;
+     private String model;
+     private int year;
+     public Car (String make, String model, int year)
+     {
+         this.make = make;
+         this.model= model;
+         this.year = year;
+     }
+
+     public String setCarMake(String make)
+     {
+         this.make = make;
+         return make;
+     }
+     public String getCarMake()
+     {
+         return make;
+     }
+
+     public String getCarModel() {
+         this.model = model;
+         return model;
+     }
+
+     public int setCarYear(int year) {
+         this.year = year;
+         return year;
+
+     }
+
+     public int getCarYear() {
+         return year;
+     }
+
+     public String toString() {
+         return "Car make: " + make + " Car model: " + model + "      Car Year:" + year;
+
+     }
+
+     public static void main (String[] args)
+     {
+         Car car1 = new Car("Toyota", "Camry" , 1999);
+         Car car2 = new Car("Lexus", "RX350" , 2009);
+         Car car3 = new Car("Infinity", "Q50" , 2013);
+
+         car1.setCarMake("BMW");
+         System.out.println(car1);
+         System.out.println(car1.getCarYear());
+
+         car3.setCarYear(2018);
+         System.out.println(car3);
+         System.out.println(car3.getCarModel());
+
+     }
+
+ }
+
